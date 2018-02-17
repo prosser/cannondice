@@ -1,0 +1,44 @@
+{
+  "name": "cannondice",
+  "version": "1.0.0-alpha.1",
+  "description": "3D-rendered dice for modern browsers with Cannon.js physics. Based on Teal's excellent 3D dice javascript component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean:build": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noemit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prosser/cannondice.git"
+  },
+  "keywords": [
+    "dice",
+    "cannonjs",
+    "canvas",
+    "webgl"
+  ],
+  "author": "Peter Rosser <peter@rossers.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prosser/cannondice/issues"
+  },
+  "homepage": "https://github.com/prosser/cannondice#readme",
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "lodash": "^4.17.5",
+    "three": "^0.90.0"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.104",
+    "@types/three": "^0.89.10",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.7.2"
+  }
+}
