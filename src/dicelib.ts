@@ -7,6 +7,7 @@ import {
   Vector2,
   Sphere
 } from 'three';
+import { Shape } from 'cannon';
 import { Vec3, ConvexPolyhedron } from 'cannon';
 
 const randomOrgApiKey = 'f6e74d7b-070e-4f85-865d-d859fc0d078b';
@@ -145,7 +146,7 @@ function createShape(vertices: Vector3[], faces: number[][], radius: number) {
 }
 
 export interface GeometryWithCannnonShape extends THREE.Geometry {
-  cannonShape?: CANNON.Shape;
+  cannonShape?: Shape;
 }
 
 function createGeometry(

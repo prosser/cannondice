@@ -51,7 +51,7 @@ var DiceBox = /** @class */ (function () {
             friction: 0,
             restitution: 1.0
         }));
-        this.world.addContactMaterial(new CANNON.ContactMaterial(die_1.Die.diceBodyMaterial, die_1.Die.diceBodyMaterial, {
+        this.world.addContactMaterial(new cannon_1.ContactMaterial(die_1.Die.diceBodyMaterial, die_1.Die.diceBodyMaterial, {
             friction: 0,
             restitution: 0.5
         }));

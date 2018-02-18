@@ -1,3 +1,4 @@
+/// <reference types="cannon" />
 import { Body, Material } from 'cannon';
 import { GeometryWithCannnonShape } from './dicelib';
 import { Mesh, MeshFaceMaterial, Object3D, Texture } from 'three';

@@ -1,3 +1,4 @@
+/// <reference types="cannon" />
 import { AfterDiceRollCallback, BeforeDiceRollCallback, NotationGetter, DiceBoxCallback } from './callbacks';
 import { Light, Mesh, Renderer, Scene, Vector2 } from 'three';
 import { Material, World } from 'cannon';

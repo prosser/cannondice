@@ -38,7 +38,6 @@ import { DiceFactory } from './dicefactory';
 import { DiceNotation } from './dicenotation';
 import { Die } from './die';
 import { DieVector } from './dievector';
-import { HttpClient } from '@angular/common/http';
 import { bind, initRng, randomizeVector, rng } from './dicelib';
 
 export class DiceBox {
@@ -111,7 +110,7 @@ export class DiceBox {
       })
     );
     this.world.addContactMaterial(
-      new CANNON.ContactMaterial(Die.diceBodyMaterial, Die.diceBodyMaterial, {
+      new ContactMaterial(Die.diceBodyMaterial, Die.diceBodyMaterial, {
         friction: 0,
         restitution: 0.5
       })
